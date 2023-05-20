@@ -1,0 +1,39 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+nav {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background: linear-gradient(to right, blue, indigo);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    height: 30px;
+  }
+
+  .search-sec {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+  }
+
+  .searchBar {
+    margin-top: -10px;
+    border-radius: 3px;
+  }
+
+  .searchBtn {
+    background: rgb(60, 141, 216);
+    color: white;
+    width: 100%;
+    margin-top: 10px ;
+    border-radius: 3px;
+    border: 0;
+  }
+
+  
