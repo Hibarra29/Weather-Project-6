@@ -12,7 +12,10 @@ nav {
     font-size: 20px;
     font-weight: bold;
     font-family: sans-serif;
-    height: 30px;
+  }
+
+  .container {
+    float: right;
   }
 
   .search-sec {
@@ -27,7 +30,7 @@ nav {
     border-radius: 3px;
   }
 
-  .searchBtn {
+  #searchBtn {
     background: rgb(60, 141, 216);
     color: white;
     width: 100%;
@@ -36,4 +39,11 @@ nav {
     border: 0;
   }
 
+  #forecast {
+    display: block;
+  }
+
+  .today {
+    display: block;
+  }
   
