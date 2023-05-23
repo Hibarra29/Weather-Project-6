@@ -16,6 +16,7 @@ nav {
 
   .container {
     float: right;
+    width: 70%
   }
 
   .search-sec {
@@ -23,6 +24,12 @@ nav {
     display: flex;
     flex-direction: column;
     padding-left: 5px;
+    width: 30%;
+  }
+
+  .search-sec h1 {
+    font-size:30px ;
+    padding-bottom: 10px;
   }
 
   .searchBar {
@@ -40,10 +47,10 @@ nav {
   }
 
   #forecast {
-    display: block;
+    display: flex;
   }
 
   .today {
-    display: block;
+    display: flex;
   }
   
