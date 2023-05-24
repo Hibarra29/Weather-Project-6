@@ -24,7 +24,7 @@ nav {
     display: flex;
     flex-direction: column;
     padding-left: 5px;
-    width: 30%;
+    width: 20%;
   }
 
   .search-sec h1 {
@@ -52,8 +52,16 @@ nav {
 
   .today {
     display: flex;
+    float: right;
+    width: 75%;
+    margin-bottom: 50px;
+    border:1px solid black;
   }
   
   li:hover {
     background-color: rgba(0, 0, 0, 0.534);
+  }
+
+  .forecast {
+    float:right;
   }
