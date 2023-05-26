@@ -52,7 +52,7 @@ var city;
     function weatherFunction(city) {
       $.ajax({
         type: "GET",
-        url: "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=2c6bc92aef79d306a19b0e97f71db073&units=imperial",
+        url: "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=2c6bc92aef79d306a19b0e97f71db073",
 
       }).then(function (data){
         if (history.indexOf(city) === -1) {
