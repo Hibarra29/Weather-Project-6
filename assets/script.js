@@ -32,7 +32,7 @@ var city;
                 for (var i = 0; i < data.list.length; i++) {
                     if (data.list[i].dt_txt.indexOf("15:00:00") !== -1) {
     
-                        var forTitle = $("<h4>").addClass("card-title").text(new Date(data.list[i].dt_txt).toLocaleDateString());
+                        var forTitle = $("<h5>").addClass("card-title").text(new Date(data.list[i].dt_txt).toLocaleDateString());
                         var forImg = $("<img>").attr("src", "https://openweathermap.org/img/w/" + data.list[i].weather[0].icon + ".png");
                         var forCol = $("<div>").addClass("col-sm-2");
                         var forCard = $("<div>").addClass(".card bg-primary text-white");
@@ -75,30 +75,6 @@ var city;
 
         var lon = data.coord.lon;
         var lat = data.coord.lat;
-
-        $.ajax({
-            type: "GET",
-            url: "https://api.openweathermap.org/data/2.5/uvi?appid=2c6bc92aef79d306a19b0e97f71db073&lat=" + lat + "&lon=" + lon,
-
-        }).then(function (response) {
-            console.log(response);
-
-            var uvColor;
-            var uvResponse = response.value;
-            var uvIndex = $("<p>").addClass("card-text").text("UV Index:");
-            var btn = $("<span>").addClass("btn btn-sm").text(uvResponse);
-
-            if (uvResponse < 3) {
-                btn.addClass("btn-success");
-            } else if (uvResponse < 7) {
-                btn.addClass("btn-warning");
-            } else {
-                btn.addClass("btn-danger");
-            }
-
-            cardBody.append(uvIndex);
-            $(".today .card-body").append(uvIndex.append(btn));
-        });
 
         //merge all together
         title.append(img);
